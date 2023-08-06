@@ -8,7 +8,79 @@
 </head>
 <body>
     
- <h1>01-Arrays</h1>
+ <h1>01-Arrays functions</h1>
+    <h2>--concat()--</h2>
 
+    <p>const arr1 = ["Messi", "Neymar"];</p>
+    <p>const arr2 = ["Cristiano", "Bale"];</p>
+    <p>const futbolistas = arr1.concat(arr2);</p>
+    <p>console.log(futbolistas);</p>
+
+    <h2>--at()--</h2>
+
+    <p> const games = ["Overwatch", "FIFA", "GTA", "Assasins creed"];</p>
+    <p>let index = 1;</p>
+    <p>let game = games.at(index);</p>
+    <p>console.log(game);</p>
+    
+    <h2>--CopyWithin()--</h2>
+    
+    <p> let words = ["Messi", "CR7", "Neymar", "Benzema", "Suarez"];</p>
+    <p>words.copyWithin(1,3,4);</p>
+    <p>console.log(words);</p>
+    
+
+    <h2>--Entries()--</h2>
+    <p>const movies = ["Interestelar", "Armageddon", "No Time To Die"];</p>
+    <p>let iterator = movies.entries();</p>
+    <p>for(let entry of iterator){</p>
+    <p>console.log(entry);</p>
+    <p>}</p>
+
+    <h2>--Every()--</h2>
+    <p>const myArray = [20, 30, 40, 50];</p>
+    <p>const areEvery = myArray.every(x => x < 60);</p>
+    <p>console.log(areEvery);</p>
+
+    <h2>--fill()--</h2>
+    <p>var valorant = ['Jett', 'Omen', 'Fade', 'viper','Reyna'];</p>
+    <p>valorant.fill('Neon');</p>
+    <p>console.log(valorant);</p>
+
+    <h2>--Filter()--</h2>
+    <p>let numeros = [20, 30, 40, 50, 60, 70, 80, 90, 100, 120, 130];</p>
+    <p>function checkEven(numero){</p>
+    <p>if(numero % 3 == 0)</p>
+    <p>return true;</p>
+    <p>else</p>
+    <p>return false;</p>
+    <p>}</p>
+    <p>let NumerosPares = numeros.filter(checkEven);</p>
+    <p>console.log(NumerosPares);</p>
+
+    <h2>--find()--</h2>
+
+    <p>let numeros = [35, 21, 34, 40, 55];</p>
+    <p>function esPar(elemento){</p>
+    <p>return elemento % 2 == 0;</p>
+    <p>}</p>
+    <p>let numeroPar = numeros.find(esPar);</p>
+    <p>console.log(numeroPar);</p>
+
+    <h2>--FindIndex()--</h2>
+    <p>let Personajes = ["Ragnar Lothbrok", "Peter Parker", "Rick Grimes", "Goku", "Bruce Wayne"];</p>
+    <p>let index = Personajes.findIndex((Personaje) => Personaje === "Goku");</p>
+    <p>console.log(index);</p>
+
+    <h2>--FindLast()--</h2>
+    <p>const numeros = [5, 14, 25, 44, 171];</p>
+    <p>const encontrar = numeros.findLast((elemento) => elemento < 45);</p>
+    <p>console.log(encontrar);</p>
+    
+
+    <h2>--FindLastIndex()--</h2>
+    <p>const numeros = [5,14,25,44,171]</p>
+    <p>const PosicionNumero = (elemento) => elemento < 45 ;</p>
+    <p>console.log(numeros.findLastIndex(PosicionNumero));</p>
 </body>
 </html>
