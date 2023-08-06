@@ -82,5 +82,28 @@
     <p>const numeros = [5,14,25,44,171]</p>
     <p>const PosicionNumero = (elemento) => elemento < 45 ;</p>
     <p>console.log(numeros.findLastIndex(PosicionNumero));</p>
+
+    <h2>--flat()--</h2>
+    <p>let Gallos = ["Chuty", "Aczino", ["Gazir", "Bnet", ["Valles-t", "Sweetpain", ["Teorema", "wos"]]]];</p>
+    <p>let QuitarArreglos = Gallos.flat(2);</p>
+    <p>console.log(QuitarArreglos)</p>
+
+    <h2>--flatMap()--</h2>
+    <p>let numeros2 = [2, 4, 6, 8, 10, 12];</p>
+    <p>const ArregloResultante = numeros2.flatMap((x) => [x ** 2]);</p>
+    <p>console.log(ArregloResultante);</p>
+
+    <h2>--forEach()--</h2>
+    <p>let numeros3 = [3, 6, 9, 12, 15, 18]</p>
+    <p>function MultiplicacionMisma(elemento1){</p>
+    <p>console.log(elemento1 * elemento1)   </p>   
+    <p>}</p>
+    <p>numeros3.forEach(MultiplicacionMisma)</p>
+
+    <h2>--Includes()--</h2>
+    <p>let RealMadrid = ["Kroos", "Modric", "Camavinga", "Vinicius", "Rodrygo"];</p>
+    <p>let RevisionJugadores = RealMadrid.includes("Vinicius");</p>
+    <p>console.log(RevisionJugadores);</p>
+
 </body>
 </html>
